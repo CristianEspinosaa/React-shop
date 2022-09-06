@@ -1,0 +1,82 @@
+@use 'vars';
+
+.main-container{
+    width: 360px;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+}   
+
+.main-container div:nth-child(1){
+    margin: 0;
+    padding: 12px;
+    position: absolute;
+    z-index: 2;  
+    
+}
+.icon-close{
+    position: absolute;
+    background-color: var(--white);
+    width: 20px;
+    border-radius: 50%;
+    margin: 0;
+    z-index: 2;
+    padding: 4px;
+    
+}
+.main-container img:nth-child(2){
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.container-info{
+    padding: 25px;
+}
+.container-info p:nth-child(1){
+    font-size: var(--lg);
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container-info p:nth-child(2){
+    font-size: var(--md);
+    font-weight: bold;
+    color: var(--very-ligth-pink);
+    margin-top: 4px;
+}
+
+.container-info p:nth-child(3){
+    font-size: var(--md);
+    color: var(--very-ligth-pink);
+    text-align: justify;
+    padding: 30px 0;
+}
+
+.primary-button {
+    background-color: var(--hospital-green);
+    color: var(--white);
+    border: none;
+    border-radius: 6px;
+    height: 50px;
+    width: 100%;
+    font-size: var(--md);
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    margin: 0;
+
+}
+
+@media (max-width:640px){
+    .main-container{
+        width: 100%;
+    }
+
+}
